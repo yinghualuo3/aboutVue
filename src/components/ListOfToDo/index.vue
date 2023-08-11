@@ -20,5 +20,6 @@ const props = defineProps(["list", "onDelete"]);
         </div>
       </li>
     </ol>
+    <div class="noData" v-if="list?.length <= 0">暂无数据</div>
   </div>
 </template>
